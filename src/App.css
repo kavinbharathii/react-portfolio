@@ -1,38 +1,263 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Montserrat:wght@400;700;900&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+    display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+    --black: #121212;
+    --slate-black: #191919;
+    --slate-grey: #696969;
+
+    --white-primary: #ffffff;
+    --white-secondary: #dedede;
+
+    --accent: #e7931f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    overflow-x: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.fullScreen {
+    width: 100vw;
+    height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 5em;
+    letter-spacing: 0.2em;
+    font-weight: 999;
+
+    background: var(--black);
 }
+
+.homeKavinImg, .homeText, .homeKavinImgNoBg {
+    position: absolute;
+}
+
+.homeText {
+    color: var(--white-primary);
+}
+
+.homeKavinImg,
+.homeKavinImgNoBg {
+    width: 500px;
+    height: 500px;
+
+    transition: 300ms ease;
+}
+
+.homeKavinImgNoBg:hover {
+    scale: 1.05;
+}
+
+.mazePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--black);
+    position: relative;
+    overflow: hidden;
+}
+
+.mazeImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-size: contain;
+    z-index: 0;
+
+    opacity: 0.5;
+}
+
+.mazeContent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    color: var(--white-primary);
+    font-size: 4em;
+    font-weight: 999;
+
+    z-index: 1;
+
+    width: 45vw;
+}
+
+.projectsPage {
+    position: relative;  
+    background: var(--black);  
+
+    /* overflow: hidden; */
+}
+
+.mazeSpillImage {
+    position: absolute;
+    top: -100vh;
+    right: 0;
+
+    opacity: 0.4;
+}
+
+.projectsContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.githubCard {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+
+    z-index: 1;
+
+    width: 40vw;
+    height: 50vh;
+    padding: 2em;
+
+    background: var(--slate-black);
+    border-radius: 20px;
+}
+
+.githubCardTop {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.githubUserName {
+    font-size: 2em;
+    color: var(--white-primary);
+    font-weight: 600;
+}
+
+.githubUserId {
+    font-size: 1.5em;
+    color: var(--slate-grey);
+    font-weight: 600;
+}
+
+.githubCardLink {
+    font-size: 1.5em;
+    font-weight: 501;
+    color: var(--white-primary);
+}
+
+.githubKavinImg {
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50vh;
+}
+
+.projectText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+
+    z-index: 1;
+}
+
+.projectText > p {
+    font-size: 3.5em;
+    color: var(--white-primary);
+    font-weight: 600;
+}
+
+.skillsPage {
+    background: var(--black);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.skillsSkillBoxesContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+    
+    width: 100vw;
+}
+
+.skillsText {
+    font-size: 5em;
+    font-weight: 600;
+    color: var(--white-primary);
+}
+
+.skillsBox {
+    width: 20vw;
+    height: 40vh;
+
+    background: var(--slate-black);
+    color: var(--white-primary);
+
+    border-radius: 20px;
+    padding: 2em;
+
+}
+
+.skillsBoxTitle {
+    font-size: 2em;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.skillsBoxContent {
+    margin-left: 20%;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.creativityPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--black);
+    position: relative;
+
+    overflow: hidden;
+}
+
+.creativityBulb {
+    width: 30vw;
+    height: auto;
+    position: absolute;
+
+    left: 15%;
+}
+
+.creativityHouse {
+    height: 85vh;
+    width: auto;
+    position: absolute;
+    right: 0%;
+    top: 20%;
+}
+
+
