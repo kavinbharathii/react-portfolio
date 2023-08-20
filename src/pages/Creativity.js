@@ -6,7 +6,7 @@ const Creativity = () => {
     return (
         <section className="fullScreen creativityPage">
             <div className="creativityText">
-                <span className="creativityTextWhite">with a pi</span>nch of creativity
+                <span className="creativityTextWhite">with a pi</span>nch of creativity.
             </div>
 
             <img src={Bulb}  alt="" className="creativityBulb" />

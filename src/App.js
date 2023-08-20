@@ -4,6 +4,7 @@ import Maze from './pages/Maze';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Creativity from './pages/Creativity';
+import Footer from './pages/Footer'
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 			<Projects />
 			<Skills />
 			<Creativity />
+			<Footer />
 		</div>
 	)
 }

@@ -9,7 +9,6 @@ const Projects = () => {
 
             <div className="projectsContent">
                 <div className="githubCard">
-
                     <div className="githubCardTop">
                         <img className="githubKavinImg" src={Kavin} />
 
@@ -19,8 +18,9 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <p className="githubCardLink">github.com/kavinbharathii</p>
+                    <a className="githubCardLink" href="https://github.com/kavinbharathii" target="blank_">github.com/kavinbharathii</a>
                 </div>
+
 
                 <div className="projectText">
                     <p>A hectic</p>
