@@ -3,9 +3,9 @@ import SkillsBox from "../components/SkillsBox";
 
 const Skills = () => {
 
-    const languages = ["Python", "Javascript", "Rust", "Processing", "HTML/CSS"]
-    const techStacks = ["Django", "Vue.js", "React", "Node.js", "Express"]
-    const tools = ["Pandas", "Numpy", "Matplotlib", "Sci-kit learn", "Tensorflow"]
+    const languages = ["Python", "Javascript", "Rust", "Processing", "TypeScript"]
+    const techStacks = ["Django", "Next.js", "React", "Node.js", "Express"]
+    const tools = ["Figma", "Firebase", "Numpy", "Supabase", "Tensorflow"]
     const softSkills = ["Logical Reasoning", "Practical Thinking", "Leadership Skills", "Communication", "Adaptability"]
 
     return (

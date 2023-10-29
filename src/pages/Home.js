@@ -1,14 +1,16 @@
 
 import React from "react";
-import KavinBW from "./assets/kavindpbw.jpg"
-import KavinBWnoBG from "./assets/kavindpbw-removebg.png"
+import KavinHome from "./assets/KavinHome.png"
 
 const Home = () => {
     return (
         <section className="fullScreen homepage">
-            <img className="homeKavinImg" src={KavinBW} />
-            <img className="homeKavinImgNoBg" src={KavinBWnoBG} />
-            <div className="homeText">K A V I N  B H A R A T H I</div>
+            <img className="homeKavinImg" src={KavinHome} alt="Kavin Home" />
+            <div className="homeText">
+                <div className="homeText"><span className="homeHey">Hey, I'm </span>Kavin</div>
+                <div className="homeText">Bharathi</div>
+                <div className="homeHey">And this is a bit about myself!</div>
+            </div>
         </section>
     )
 }
