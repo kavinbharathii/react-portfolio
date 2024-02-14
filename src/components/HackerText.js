@@ -1,8 +1,12 @@
 import React from "react";
 import { useState } from "react";
 
+
+//                      Props
 const HackerText = ({ textString }) => {
 
+
+    // Logic 
     const [text, setText] = useState(textString)
     const alphas = "abcdefghijklmnopqrstuvwxyz@#$%&*"
 

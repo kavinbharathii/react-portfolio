@@ -1,5 +1,7 @@
 import React from "react";
 
+
+//                          Props
 const SkillsBox = ({ startToken, content, endToken }) => {
     return (
         <div className="skillsBox">

@@ -9,12 +9,12 @@ import Footer from './pages/Footer'
 function App() {
 	return (
 		<div className='dev'>
-			<Home />
+			{/* <Home /> */}
 			<Maze />
-			<Projects />
+			{/* <Projects /> */}
 			<Skills />
-			<Creativity />
-			<Footer />
+			{/* <Creativity /> */}
+			{/* <Footer /> */}
 		</div>
 	)
 }
