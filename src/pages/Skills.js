@@ -16,6 +16,8 @@ const Skills = () => {
                 <SkillsBox startToken={"[Tools"}            content={tools}             endToken={"]"}/>
                 <SkillsBox startToken={"`${Skills"}         content={softSkills}        endToken={"}`"}/>
             </div>
+
+            <span className="skillsText">An arsenal of weapons</span>
         </section>
     )
 }
